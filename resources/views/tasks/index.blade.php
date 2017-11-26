@@ -50,13 +50,14 @@
 
                     <!-- 表身 -->
                     <tbody>
+
+
                     @foreach ($tasks as $task)
                         <tr>
                             <!-- 任務名稱 -->
                             <td class="table-text">
                                 <div>{{ $task->name }}</div>
                             </td>
-
                             <!-- 刪除按鈕 -->
                             <td>
                                 <form action="/task/{{ $task->id }}" method="POST">
