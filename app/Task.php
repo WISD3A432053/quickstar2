@@ -12,9 +12,7 @@ class Task extends Model
      * @var array
      */
     protected $fillable = ['name'];
-    protected $policies = [
-        Task::class => TaskPolicy::class,
-    ];
+
 
     public function user()
     {
